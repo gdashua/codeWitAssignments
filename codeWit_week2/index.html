@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing game</title>
+	<link rel="stylesheet" type="text/css" href="myStyles.css">
+	<meta name ="viewreport" content = "width= device-width initial-scale = 1.0" >
+	<meta http-eqiv ="X-UA-Compatible" content = "ie=edge" >
+</head>
+<body onload="randomise()">
+	<div id="container">
+		<div id="output1">
+			<h1 id="intro">I've got a number in mind between 1-50 <br>prove your genius!<br>you have seven chances</h1>
+			<h3 id="verdict">Enter your guess below and press enter:</h3><hr> 
+			<input type="number" id= "guess" onchange="permitAttempt()" >
+		</div>
+
+		<div> 
+			<button onclick="newGame()"><b>New Game</b></button>
+			<button onclick="compareGuess()"><b>Go</b></button>	
+		</div>
+
+		<div id="output2">
+			<p class="stats">Guess History: <span id="prelog"></span></p>
+		</div>
+	</div>
+	<script>
+	var computerGuess;
+	var guessLog = [];
+	
+	function newGame(){
+		window.location.reload();
+	}
+	function randomise(){
+		computerGuess = Math.floor(Math.random()*50+1);
+		//console.log(computerGuess);  
+	}
+	function permitAttempt(){
+		var lArray =guessLog.length;
+		lArray++;
+		if (lArray>7){
+			document.getElementById("verdict").innerHTML = "Game over";
+			document.getElementById('guess').value = "";
+		}
+
+		else{
+			return compareGuess();
+		}
+	}
+
+	function compareGuess(){
+		var playerGuess = document.getElementById("guess").value;
+			guessLog.push(playerGuess);
+
+			document.getElementById("prelog").innerHTML=guessLog;
+		if (playerGuess > computerGuess) {
+			document.getElementById("verdict").innerHTML = "No! the number is smaller, try again!";
+			document.getElementById('guess').value = "";
+		}
+		else if (playerGuess<computerGuess) {
+			document.getElementById('verdict').innerHTML = "No! the number is bigger, try again!";
+			document.getElementById('guess').value = "";
+		}
+		else {
+			document.getElementById("verdict").innerHTML = "Correct!!!"
+			document.getElementById('guess').value = "";
+		}
+	}
+	</script>
+
+</body>
+</html>
