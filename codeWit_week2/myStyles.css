@@ -2,14 +2,12 @@
 	background-color: brown;
 	height: 700px;
 	text-align: center;
-	border-radius: 20px;
+	border-radius-top-left: 20px;
+	border-radius-top-right: 20px;
 	margin: 0px;
 }
 #intro{
 	margin-top: 200px;
-	margin-left: 25%; 
-	width: 50%;
-	border-radius: 16px;
 	background-color: white;
 }
 #gameOver{
