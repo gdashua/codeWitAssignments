@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>staffDashboard</title>
+
+	<meta charset= "utf-8">
+	<meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style type="text/css">
+		li{
+			display: inline;
+			float: right;
+			margin-left: 10px;
+			color: red;
+			font-size: 20px;
+			margin-top: 30px;
+		}
+		body{
+			font-color: white;
+			padding: 0px;
+		}
+				#search{
+			margin: 40px;
+			margin-left: 300px;
+			width: 500px;
+			font-size: 30px;
+			background-image: url(images/searchIcon.jpg);
+			background-repeat: no-repeat;
+			padding-left: 50px;
+			border-radius: 10px;
+		}
+		a{
+			text-decoration: none;
+			padding: 20px;
+			color: white;
+		}
+		#header{
+			background-color: black;
+			height: 100px;
+			margin: -7px;
+			margin-top: -20px;
+			margin-right: -8px;
+		}
+		#nav{
+			margin-top: 0px;
+			margin-right: -90px;
+		}
+		a:hover{
+			font-weight: 20px;
+			color: #99ff33;
+		}
+		#log{
+			width: 100px;
+			height: 100px;
+			float: left;
+			color: white;
+			border-radius: 50px;
+		}
+		#rgtDiv{
+			position:absolute;
+			margin-left: 700px;
+			right: 30px;
+			top: 100px;
+			margin-top:5px;
+		}
+		.rb{
+			margin-right: -15px;
+			width: 130px;
+			background-color: #0099cc;
+			border-radius: 4px;
+		}
+		.lb{
+			background-color: #ff9900;
+			padding: 7px;
+			width: 90px;
+			border-radius: 5px;
+		}
+		#rbdiv{
+			position: absolute;
+			right: 2px;
+			top: 100px;
+
+		}
+		#not{
+			position: absolute;
+			right: 105px;
+			top: 2px;
+		}
+		#msg{
+			position: absolute;
+			right: 105px;
+			top: 60px;
+		}
+		#updates{
+			width: 100.8%;
+			height: 800px;
+			background-color: silver;
+			margin-left: -5px;
+			margin-right: -10px;
+			text-align: center;
+		}
+		span{
+			color: brown;
+			font-style: italic;
+		}
+		#nav{
+			position: absolute;
+			top: -10px;
+			right: 100px;
+		}
+		#footer{
+			position: absolute;
+			bottom: -450px;
+			background-color: #47476b;
+			text-align: center;
+			font-family: monospace;
+			color: white;
+			margin-right: -10px;
+			margin-left: -7px;
+			padding: 30px;
+			font-size: 20px;
+			font-style: italic;
+			width: 95.4%;
+		}	
+
+	</style>
+</head>
+<body>
+		<div id="header">
+			<img src="images/logo.jpg" alt="companys logo" id="log">
+			<input type="text" name="key_words" id="search" placeholder="Search...">
+			<div id="nav">
+				<ul>
+				<li><a href="admin_login.html">Logout</a></li>
+				<li><a href="staff_login.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--end of header-->
+
+		<div id="bod2">
+			<div id="lftDiv">
+				<p><h3>welcome<span> staff name</span></h3></p></ br>
+				<p><button class="lb"><b>My Tasks</b></button></p>
+				<p><button class="lb"><b>Contracts</b></button></p>
+				<p><button class="lb"><b>Edit Profile</b></button></p>
+			</div>
+
+			<div id="rgtDiv">
+				<img src="image/notifiy.jpg" id="not">
+				<img src="images/msgIcon.jpg" id="msg">
+				<img src="avatar.jpg">
+				<div id="rbdiv">
+				<button class="rb"><b>submit task</b></button>
+				<button class="rb"><b>join meeting</b></button>
+				<button class="rb"><b>direct message</b></button>
+				</div>
+			</div>
+			<div id="updates"><h1 id="timelineHd">Latest Updates</h1><hr><hr></div>
+		</div>
+					<p id="footer">
+				Copyright &copy; 2020 Alowe Press Limited
+			</p>
+</body>
+</body>
+</html>

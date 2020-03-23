@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<!--READ ME
+As a result of the COVID-19 pandemic, social distancing has been embraced globally as a means of curbing the spread of the disease. Many Companies across the globe have resolved to switch to remote work as a precautionary measure. Alowe Press Limited, a renowned book publishing company in the Dubai, the United Arab Emirates (UAE) is no exception. This is an online management system that was developed in order to meet the needs the company.
+The system essentially enables the CEO to:
+1.	Set assign task to any employee or team by using the direct messaging functionality
+2.	track each and every task progress through the track task functionality
+3.	view all contracts won by the company
+4.	update the staff on anything that concerns every employee
+5.	edit his profile
+6.	receive feedback from each employee
+7.	startup organization’s meetings and briefings by sending notifications to all employees to the forum at the stipulated time
+The system also enables the employees to:
+1.	 submit task to the CEO through the direct message functionality
+2.	collaborate with other team members
+3.	participate in online meetings
+4.	view task they are involved in or were assigned to 
+5.	view the companies contracts or projects
+6.	edit their profiles
+-->
+<html>
+<head>
+	<title>homepage</title>
+
+	<meta charset= "utf-8">
+	<meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style type="text/css">
+		li{
+			display: inline;
+			float: right;
+			margin-left: 10px;
+			color: red;
+			font-size: 20px;
+			margin-top: 30px;
+		}
+		body{
+			font-color: white;
+			background-image: url(images/backGround2.jpg);
+			background-repeat: no-repeat;
+			padding: 0px;
+			background-size: 100%;
+			padding-bottom: -10px;
+		}
+		a{
+			text-decoration: none;
+			padding: 20px;
+			color: white;
+		}
+		#header{
+			background-color: black;
+			height: 100px;
+			margin: -7px;
+			margin-top: -20px;
+			margin-right: -8px;
+		}
+		a:hover{
+			font-weight: 20px;
+			color: #99ff33;
+		}
+		img{
+			width: 85px;
+			height: 85px;
+			float: left;
+			color: white;
+			border-radius: 50px;
+			margin-top: 7px;
+			margin-left: 5px;
+		}
+		#search{
+			margin: 40px;
+			margin-left: 300px;
+			width: 500px;
+			font-size: 30px;
+			background-image: url(images/searchIcon.jpg);
+			background-repeat: no-repeat;
+			padding-left: 50px;
+			border-radius: 10px;
+		}
+		#bod{
+			text-align: center;
+			font-family: serif;
+		}
+		#legPosition{
+			padding-top:-7px;
+		}
+		.intro{
+			margin-top: 1px;
+			color: #ffff99;
+			font-family: serif;
+			word-spacing: 3px;
+			background-color: #993366;
+			padding: 7px;
+			margin-right: -8px;
+			margin-left: -7px;
+			font-size:200%;
+			}
+
+		fieldset{
+			width: 350px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			padding: 30px;
+			border: 1px,solid,#dcdcdc;
+			border-radius: 10px;
+			text-align: right;
+			background-color: #ffffff;
+			opacity: 0.91;
+			height: 400px;
+		}
+		.newU{
+			width: 50px;
+			text-align: right;
+			padding-right: 10px;
+		}
+		.tfield{
+			font-size: 15px;
+			float: right;
+		}
+		.regFrm{
+			width: 300px;
+			margin-top: 15px;
+		}
+		#submit{
+			margin-top: 17px;
+			background-color: #33ccff;
+			border-radius: 5px;
+			font-size: 20px;
+			text-align: center;
+		}
+		#submit:hover{
+			border: solid;
+		}
+		#inst{
+			font-family: serif;
+			font-style: italic;
+			color: #e6f3ff;
+		}
+		#regButton{
+		padding-right: 50px;
+		}
+		#genda{
+			padding: 20px;
+			padding-right: 115px;
+			width: 300;
+		}
+		#nav{
+			position: absolute;
+			top: -10px;
+			left: 900px;
+		}
+		#footer{
+			position: absolute;
+			bottom: -200px;
+			background-color: #47476b;
+			text-align: center;
+			font-family: monospace;
+			color: white;
+			margin-right: -10px;
+			margin-left: -7px;
+			padding: 30px;
+			font-size: 20px;
+			font-style: italic;
+			width: 95.4%;
+		}	
+		</style>
+</head>
+<body>
+		<div id="header">
+			<img src="images/logo.jpg" alt="companys logo" id="log">
+			<input type="text" name="key_words" id="search" placeholder="Search...">
+			<div id="nav">
+				<ul>
+				<li><a href="index.html">Staff Login</a></li>
+				<li><a href="admin_login.html">Admin Login</a></li>
+				<li><a href="staff_login.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--end of header-->
+
+		<div id="bod">
+			<h1 class="intro">welcome to <em>AlOWE Press Limited</em> Management Information System</h1>
+
+			<fieldset>
+				<h1 id="legPositn" align="right">New User Registration</h1>
+				<div>
+					<div class="regFrm"><label for="fname" class="newU">First Name: <input type="text" name="first_name" id="fname" class="tfield"></label><br />
+					</div>
+					<div class="regFrm"><label for="lname" class="newU">Last Name: <input type="text" name="last_name" id="lname" class="tfield"></label><br />
+					</div>
+					<div class="regFrm"><label for="oname" class="newU">Other Names: <input type="text" name="other_name" id="oname" class="tfield"></label><br />
+					</div>
+					<div class="regFrm"><label for="stId" class="newU">Staff ID: <input type="text" name="staff_id" id="stId" class="tfield"></label><br />
+					</div>
+					<div class="regFrm"><label for="uname" class="newU">User Name: <input type="text" name="user_name" id="uname" class="tfield"></label><br />
+					</div>
+					<div class="regFrm"><label for="email" class="newU">Email:<input type="email" name="email" id="email" class="tfield"></label><br />
+					</div>
+					<div class="regFrm"><label for="password" class="newU">Password:<input type="password" name="password" id="password" class="tfield"></label><br />
+					</div>
+					<div id="genda">
+						<span class="newU">Gender: </span>
+						<input type="radio" name="gender" id="fmale" value="F">
+						<label for="fmale" >female</label>
+						<input type="radio" name="gender" id="male" value="M">
+						<label for="male">male</label><br />
+					</div>
+				</div>
+						<div id="regButton"><input type="submit" value="Create Account" id="submit"></div>
+			</fieldset>
+		</div>
+					<p id="footer">
+				Copyright &copy; 2020 Alowe Press Limited
+			</p>
+</body>
+</html>
