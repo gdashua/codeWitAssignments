@@ -86,7 +86,7 @@ else if($probability==4){
  }
 
 ?>
-<a href="index.php">Go back to homepage</a>
+<a href="index.html">Go back to homepage</a>
 
 </body>
 	<div id="footer">
