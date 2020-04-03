@@ -17,6 +17,9 @@
 		background-size: 100%;
 		font-family: Arial, Verdana,sans-serif;
 	}
+	#intro{
+		font-size: 60%;
+	}
 	#content {overflow: auto;}
 	.column1, .column2, .column3 {
 		width: 31%;
@@ -77,7 +80,7 @@
 		background-color: blue;
 	}
 	.symtomps{
-		font-size: 60%;
+		font-size: 65%;
 	}
 	legend{
 		border: 10%;
@@ -101,6 +104,103 @@
 	.gold{
 		color: gold;
 	}
+
+	@media screen and (max-width: 768px){
+		body{
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		background-image: url('background.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		font-family: Arial, Verdana,sans-serif;
+	}
+	#content {overflow: auto;}
+	.column1, .column2, .column3 {
+		width: 30%;
+		float: left;
+		margin: 1%;
+		border: 1%;
+		opacity: 0.8;
+		color: white;
+		font-size: 70%;
+	}
+	.column3{ margin-right: 0%;}
+	li{
+		display: inline;
+		padding: 0.5em;
+	}
+	#nav, #footer{
+		background-color: black;
+		padding: 0.5em 0;
+	}
+	#feature, .article {
+		height: 10em;
+		margin-bottom: 1em;
+		background-color: #4d1933;
+		opacity: 0.8;
+		color:  white;
+		border-style: inset;
+		border-color: black;
+	}
+	#footer{
+		margin-left: -6.075%;
+		margin-right: -6.1%;
+		background-color: #001a33;
+		color: white;
+	}
+	#anav{
+		text-decoration: none;
+		font-size: 0.65em;
+		border-style: groove;
+		border: 1%;
+		padding: 0.5%;
+		color: white;
+		background-color: #996600;
+		border-radius: 5%;
+	}
+	#header{
+		margin-left: -6.075%;
+		margin-right: -6.1%;
+	}
+	#feature{
+		color: gold;
+		font-size: 240%;
+	}
+	#form{
+		color: #1a0000;
+		font-size: 50%;
+		background-color: #eee;
+	}
+	input{
+		background-color: blue;
+	}
+	.symtomps{
+		font-size: 50%;
+	}
+	legend{
+		border: 10%;
+		text-align: center;
+	}
+	#submit{
+		font-size: 65%;
+		border-radius: 10%;
+		color: #ccff99;
+	}
+	#submit:hover{
+    background-color: #000066;
+    color: green;
+	}
+	#patientsName{
+		background-color: #333300;
+		font-size: 73%;
+		color: white;
+		width: 45%;
+	}
+	.gold{
+		color: gold;
+	}
+	}
 	</style>
 </head>
 <body>
@@ -117,7 +217,7 @@
 	<!--end of header-->
 	<div id="content">
 		<div id="feature">
-			<p>Corona Virus Checker</p>
+			<p id="intro">Corona Virus Checker</p>
 
 			
 			<form id="form" action="medAdvice.php" method="GET">
