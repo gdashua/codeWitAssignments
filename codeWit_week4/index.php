@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "utf-8">
+	<meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>COVID-19 Checker</title>
+	<style type="text/css">
+	body{
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		background-image: url('background.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		font-family: Arial, Verdana,sans-serif;
+	}
+	#content {overflow: auto;}
+	.column1, .column2, .column3 {
+		width: 31%;
+		float: left;
+		margin: 1%;
+		border: 1%;
+		opacity: 0.8;
+		color: white;
+	}
+	.column3{ margin-right: 0%;}
+	li{
+		display: inline;
+		padding: 0.5em;
+	}
+	#nav, #footer{
+		background-color: black;
+		padding: 0.5em 0;
+	}
+	#feature, .article {
+		height: 10em;
+		margin-bottom: 1em;
+		background-color: #4d1933;
+		opacity: 0.8;
+		color:  white;
+		border-style: inset;
+		border-color: black;
+	}
+	#footer{
+		margin-left: -6.075%;
+		margin-right: -6.1%;
+		background-color: #001a33;
+		color: white;
+	}
+	#anav{
+		text-decoration: none;
+		font-size: 1em;
+		border-style: groove;
+		border: 1%;
+		padding: 0.5%;
+		color: white;
+		background-color: #996600;
+		border-radius: 5%;
+	}
+	#header{
+		margin-left: -6.075%;
+		margin-right: -6.1%;
+	}
+	#feature{
+		color: gold;
+		font-size: 250%;
+	}
+	#form{
+		color: #1a0000;
+		font-size: 70%;
+		background-color: #eee;
+	}
+	input{
+		background-color: blue;
+	}
+	.symtomps{
+		font-size: 60%;
+	}
+	legend{
+		border: 10%;
+		text-align: center;
+	}
+	#submit{
+		font-size: 70%;
+		border-radius: 10%;
+		color: #ccff99;
+	}
+	#submit:hover{
+    background-color: #000066;
+    color: green;
+	}
+	#patientsName{
+		background-color: #333300;
+		font-size: 80%;
+		color: white;
+		width: 32%;
+	}
+	.gold{
+		color: gold;
+	}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<ul>
+				<b><li> <a href="#" id="anav">Home</a> </li></b>
+				<b><li> <a href="aboutUs.html" id="anav">About</a> </li></b>
+				<b><li> <a href="contact.html" id="anav">Contact</a> </li></b>
+			</ul>
+			
+		</div>
+	</div>
+	<!--end of header-->
+	<div id="content">
+		<div id="feature">
+			<p>Corona Virus Checker</p>
+
+			
+			<form id="form" action="medAdvice.php" method="GET">
+			<legend>
+			<p>Select the symptoms you experience below please:</p>
+			<input type="text" name="name" placeholder="enter your name hear please" id="patientsName">
+			<p>
+				<input type="checkbox" name="fever">
+				<label for="fever" class="symtomps">Fever</label>
+			</p>
+		
+				<input type="checkbox" name="cPain" >
+				<label for="fever" class="symtomps">Chest pain</label>
+	
+				<input type="checkbox" name="cough">
+				<label for="cough" class="symtomps">Cough</label>
+		
+				<input type="checkbox" name="dbreath">
+				<label for="fever" class="symtomps">Difficulty breathing</label>
+		     <p class="symtomps">Are you a returning traveller from a foreign country?
+		     <input type="radio" class="travel" name="Travelled" ><span>Yes</span>
+		     <input type="radio" class="travel" name="Travelled" ><span>No</span>
+		     </p>
+		     <input type="submit" value="submit" id="submit"> 
+		     </legend>
+			</form>
+		</div>
+		<div class=" article column1">
+			<u><p>Statistics</p></u>
+			<li><a class="gold">View GIS</a></li>
+			<li><a class="gold">Countries</a></li>
+		</div>
+		<div class=" article column2">
+			<u><p>Updates</p></u>
+			<p><a href="https://ncdc.gov.ng/news/245/21st-march-2020--ten-new-cases-of-covid-19-confirmed-in-nigeria" target="_blank" class="gold">Ten new cases of COVID-19 confirmed in Nigeria</a></p>
+			<p><a href="https://ncdc.gov.ng/news/244/18th-march-2020%7C-public-health-advisory-to-nigerians-on-coronavirus-disease-%28%236%29" target="_blank" class="gold">Publio Health advisory to on Corona Virus Disease</a></p>
+			<p><a href="" target="_blank" class="gold"></a></p>
+		</div>
+		<div class=" article column3">
+			<u><p>Government Emergency line</p></u>
+			<li class="gold">080097000010</li>
+			<p class="gold">Email adress: info@ncdc.gov.ng</p>
+		</div>
+	</div>
+			<!--end of content-->
+	<div id="footer">
+		<p>&copy; Gamey Technologies 2020</p>
+	</div>
+</body>
+</html>
