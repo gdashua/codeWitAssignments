@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  #navie{
+    background-color: gold;
+    font-size: 160%;
+  }
+  label{
+    margin-right: 0px;
+    margin-bottom: 10%;
+  }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default color black">
+  <div class="container-fluid" id="navie">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">FreeWay limited</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Go to Main Website</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron panel panel-info">
+  <div class="panel-heading">
+    <h1>You are welcome!</h1>
+    <p>you must login to view or monitor tasks</p> 
+    </div>
+  </div>
+  <div class="container">
+  <p class="bg-warning"><strong>#Stay safe! Endeavor to wash your hands regularly<br /> FreeWay Loves you!</strong></p>
+</div>
+  <div class="row">
+    <div class="col-sm-4">
+<form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="email" id="email">Email:</label>
+      <input type="email" class="form-control" id="Email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
