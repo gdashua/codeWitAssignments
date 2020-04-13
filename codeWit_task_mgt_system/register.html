@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="bootstrap.min.css"-->
+	<style type="text/css">
+			fieldset{
+				width: 32%;
+				margin-left: 33%;
+				margin-top: -7%;
+				margin-bottom: 10%;
+				border-radius: 20px 20px;
+				border-bottom-left-radius: 0%; 
+				background-color: #ffffff;
+				overflow: auto;
+				z-index: 100;
+			}
+			#pigBg{
+				position: fixed;
+				z-index: -10;
+				top: 0px;
+			}
+			body{
+				background-repeat: no-repeat;
+				background-size: 100%;
+				font-family: Arial,verdana,sans-serif;
+
+			}
+			form{
+				z-index: 100;
+			}
+
+			input,#aboutUs{
+				margin-bottom: 8.2%;
+				margin-top: 2%;
+				font-size: 127%;
+				border-radius: 5px 5px;
+				padding: 3.77%;
+				width: 80%;
+				margin-left: 6.7%;
+				margin-right: 7%;
+				background-color: 	#ecf2f9;
+				border-style: none;
+				color:black;
+				letter-spacing: 0.3px;
+			}
+			label{
+				padding-right: 6%;
+				padding-left: 6.6%;
+				margin-bottom: 8%;
+				font-size: 71%;
+			}
+			p{
+				text-align: center;
+				margin-top: 8%;
+				margin-bottom: 8%;
+			}
+			#submit{
+				font-weight: solid;
+			}
+			#intro{
+				color: #0000cc;
+			}
+			span{
+				font-size: 150%;
+				color: #333399;
+				font-weight: bolder;
+				line-height: 1.5em;
+				margin-left: 2%;
+			}
+			#sintro{
+				font-size: 79%;
+				color: grey;
+				letter-spacing: 1.76px;
+				font-weight: normal;
+				width: 20%;
+				line-height: 1.4em;
+			}
+			#myList{
+				background-position: bottom;
+			}
+			input{
+				line-height: 1.6em;
+			}
+			#submit{
+				border-radius: 10px 10px;
+				border-bottom-left-radius: 0px;
+				width: 87.5%;
+				background-color: #000099;
+				margin-left: 0.3%;
+				color: white;
+			}
+			#submit:hover{
+				background-color: rgb(0,64,131);
+			}
+		#pigB{
+			margin-left: 42.4%;
+			margin-top: 2.7%;
+			position: normal;
+		}
+#footer{
+  	margin-top: 14.8%;
+  	text-align: center;
+  	padding-top: 1%;
+  }
+  #infooter{
+  	margin-top: 10%;
+  }
+		a{
+			color: blue;
+			text-decoration: none;
+		}
+		#login:hover{
+			color: grey;
+		}
+		.container{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+  <a href="adminAction.html"><input type="button" class="btn btn-info" value="go back"></a>
+</div>
+<div>
+<form>
+<fieldset>	
+		<p>Set a New Task<br /></p>
+		<label>	
+				<b>Title</b><br />
+				<input type="text" name="title" placeholder="Title of task here" />
+		</label><br />
+		<label>	
+				<b>Department</b><br />
+				<input list="dept" name="dept" placeholder="department" id="myList">
+				<datalist id="dept" >
+					<option value="Research and Development"</option>
+					<option value="Admin"</option>
+					<option value="Human Resource"</option>
+					<option value="Information Technology"</option>
+					<option value="Account"</option>
+					<option value="Store"</option>
+					<option value="Audit, Monitoring and Evaluation"</option>
+					<option value="Marketing"</option>
+					<option value="Security"</option>
+					<option value="Maintainance"</option>
+				</datalist>
+		</label><br />
+		<label>	
+				<b>Select Team Members</b><br />
+				<input list="tmembers" name="tmembers" placeholder="Choose team members" id="myList">
+				<datalist id="tmembers" >
+				<option>team members</option>
+				</datalist>
+		</label><br />
+		<label>	
+				<b>Select Team Leader</b><br />
+				<input list="tmembers" name="tmembers" placeholder="Choose eam members" id="myList">
+				<datalist id="dept" >
+				<option></option>
+				</datalist>
+		</label><br />
+		<label>	
+				<b>Task Description</b><br />
+				<input type="textarea" name="taskDesc" placeholder="Task Description" />
+		</label><br />
+		<label>	
+				<b>Deadline</b><br />
+				<input type="date" name="refPhone" placeholder="Referrer Phone or Code" />
+		</label><br />
+		
+		<label>	
+				<input type="Submit" value="ADD TASK" id="submit" />
+		</label><br />	
+</fieldset>
+</form>
+</div>
+<nav class="navbar navbar-default " id="footer">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div id="infooter">
+    &copy; Gamey Technologies
+  </div>
+</nav>
+</body>
+</html>
