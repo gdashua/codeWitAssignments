@@ -60,7 +60,7 @@
 <div class="container">
   <div class="jumbotron panel panel-info">
   <div class="panel-heading">
-    <span id="intro"><h1>You are welcome!</h1>
+    <span id="intro"><h3>Welcome!<br />This is Freeway Task Management System</h3>
     </span>
     </div>
   </div>
@@ -95,7 +95,7 @@
     60% complete
   </div>
 </div>
-    <div class="panel-body text-danger">Deadline:<span> dd/mm/yy</span><br /> <a href="#">task details</a></div>
+    <div class="panel-body text-danger">Deadline:<span id="one"> </span><br /> <a href="#">task details</a></div>
   </div>
 
   <h4>task 44/Marketing Department</h4>
@@ -106,7 +106,7 @@
     40% complete
   </div>
 </div>
-    <div class="panel-body text-danger">Deadline:<span> dd/mm/yy</span><br /> <a href="#">task details</a></div>
+    <div class="panel-body text-danger">Deadline:<span id="two"> </span><br /> <a href="#">task details</a></div>
   </div>
 
   <h4>task 64/IT</h4>
@@ -117,7 +117,7 @@
     70% complete
   </div>
 </div>
-    <div class="panel-body text-danger">Deadline:<span> dd/mm/yy</span><br /> <a href="#">task details</a></div>
+    <div class="panel-body text-danger">Deadline:<span id="four"> </span><br /> <a href="#">task details</a></div>
   </div>
   <h4>task 719/Admin</h4>
   <div class="panel panel-default">
@@ -127,7 +127,7 @@
     50% complete
   </div>
 </div>
-    <div class="panel-body text-danger">Deadline:<span> dd/mm/yy</span><br /> <a href="#">task details</a></div>
+    <div class="panel-body text-danger">Deadline:<span id="three"> </span><br /> <a href="#">task details</a></div>
   </div>
 </div>
 <footer class="page-footer font-small blue pt-4" id="footer">
@@ -135,5 +135,13 @@
     &copy; 2020 Gamey Technologies
   </div>
 </footer>
+<script type="text/javascript">
+var d = new Date();
+task = ["one","two","three","four"];
+for(var i=0; i<=task.length;i++){
+d.setFullYear(2020, 6+i, 1+i**2);
+document.getElementById(task[i]).innerHTML = d;
+}
+</script>
 </body>
 </html>
